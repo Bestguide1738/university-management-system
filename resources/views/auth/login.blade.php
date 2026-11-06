@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in — University Management System</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 400: '#2dd4bf', 500: '#14b8a6', 600: '#0f766e', 700: '#115e59' },
+                        accent: { 400: '#a78bfa', 500: '#8b5cf6', 600: '#7c3aed' },
+                    },
+                    fontFamily: { sans: ['DM Sans', 'system-ui', '-apple-system', 'sans-serif'], serif: ['Fraunces', 'Georgia', 'serif'] },
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+    <!-- Page: Sign in | Laravel view: resources/views/auth/login.blade.php -->
+
+    <!-- Start: Sign in -->
+    <div class="flex-1 flex items-center justify-center p-4 bg-white">
+        <div class="w-full max-w-md">
+            <!-- Start: Brand -->
+            <div class="flex justify-center mb-8">
+                <a href="{{ url('/') }}" class="inline-flex flex-col items-center gap-3">
+                    <img src="assets/img/logo.svg" alt="University Management System" class="h-16 w-16">
+                    <span class="text-sm font-semibold text-slate-900">University Management System</span>
+                </a>
+            </div>
+            <!-- End: Brand -->
+
+            <!-- Start: Sign in card -->
+            <div class="rounded-xl border border-slate-200 bg-white p-6 sm:p-8">
+                <div class="mb-6">
+                    <h1 class="text-xl font-bold text-slate-900">Sign in</h1>
+                    <p class="mt-1 text-sm text-slate-500">Use your university email to see your courses and registrations.</p>
+                </div>
+
+                <!-- Start: Sign in form -->
+                <!-- Laravel: add @csrf; action becomes route('login') with method="post" -->
+                <form action="{{ route('login') }}" method="POST" class="space-y-5">
+                    @csrf
+
+                    @if ($errors->any())
+<div class="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">{{ $errors->first() }}</div>
+@endif
+
+                
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-600 mb-2">University email</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                                <i data-lucide="mail" class="h-5 w-5"></i>
+                            </div>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" required autofocus placeholder="you@university.ac.ug"
+                                class="block w-full pl-10 pr-3 py-3 rounded-lg bg-white border border-slate-300 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#0f766e] focus:ring-1 focus:ring-[#0f766e]">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-slate-600 mb-2">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                                <i data-lucide="lock" class="h-5 w-5"></i>
+                            </div>
+                            <input type="password" id="password" name="password" required placeholder="••••••••"
+                                class="block w-full pl-10 pr-3 py-3 rounded-lg bg-white border border-slate-300 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#0f766e] focus:ring-1 focus:ring-[#0f766e]">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" name="remember" class="h-4 w-4 rounded border-slate-300 text-[#0f766e] focus:ring-[#0f766e]">
+                            <span class="text-sm text-slate-500">Keep me signed in</span>
+                        </label>
+                        <a href="{{ route('login') }}" class="text-sm font-medium text-[#0f766e] hover:text-[#115e59]">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full py-3 px-4 rounded-lg text-sm font-semibold text-white bg-[#0f766e] hover:bg-[#115e59]">Sign in</button>
+                </form>
+                <!-- End: Sign in form -->
+
+               
+
+                <p class="mt-6 text-center text-sm text-slate-500">
+                    New student?
+                    <a href="{{ route('login') }}" class="text-[#0f766e] hover:text-[#115e59]">Create an account</a>
+                </p>
+            </div>
+            <!-- End: Sign in card -->
+        </div>
+    </div>
+    <!-- End: Sign in -->
+
+    <!-- Start: Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+                <p class="text-sm text-slate-500">© 2026 <span class="font-semibold text-slate-900">University Management System</span>. All rights reserved.</p>
+                <p class="text-sm text-slate-400">Students · Lecturers · Courses · Registrations</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+    <script>lucide.createIcons();</script>
+</body>
+</html>

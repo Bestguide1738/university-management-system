@@ -1,0 +1,112 @@
+/* University Management System — light theme, deep teal + violet, serif headings */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* Headings use the serif face; body copy stays sans */
+h1, h2, h3 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #0f766e 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-gold {
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-mesh {
+    background-image:
+        radial-gradient(at 40% 20%, rgba(15, 118, 110, 0.12) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, rgba(124, 58, 237, 0.08) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgba(15, 118, 110, 0.08) 0px, transparent 50%);
+}
+
+.glow-primary {
+    box-shadow: 0 8px 24px rgba(15, 118, 110, 0.22);
+}
+
+/* Dark sidebar scrollbar */
+.sidebar-scrollbar::-webkit-scrollbar { width: 6px; }
+.sidebar-scrollbar::-webkit-scrollbar-track { background: #042f2e; }
+.sidebar-scrollbar::-webkit-scrollbar-thumb { background: #134e4a; border-radius: 3px; }
+.sidebar-scrollbar::-webkit-scrollbar-thumb:hover { background: #7c3aed; }
+
+.border-l-3 { border-left-width: 3px; }
+
+details.menu-dropdown > summary { list-style: none; }
+details.menu-dropdown > summary::-webkit-details-marker { display: none; }
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.55s ease-out both; }
+
+@keyframes hero-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.hero-float { animation: hero-float 6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-in, .hero-float { animation: none; }
+    html { scroll-behavior: auto; }
+}
+
+.input-field {
+    width: 100%;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.875rem;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+.input-field::placeholder { color: #94a3b8; }
+
+select.input-field {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748b' viewBox='0 0 16 16'%3E%3Cpath d='M4.6 6.2L8 9.6l3.4-3.4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    padding-right: 2.25rem;
+}
+
+.file-input::file-selector-button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.375rem;
+    background: #f0fdfa;
+    color: #115e59;
+    cursor: pointer;
+}
