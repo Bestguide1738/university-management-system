@@ -10,7 +10,7 @@
 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
     <div>
         <h1 class="text-xl font-semibold">My registrations</h1>
-        <p class="text-sm text-slate-500 mt-1">Courses you have registered for.</p>
+        <p class="text-sm text-slate-500 mt-1">Courses you have registered In.</p>
     </div>
     @can('register courses')
         <a href="{{ route('student.courses.index') }}" class="inline-flex items-center px-4 py-2 bg-[#0f766e] rounded-md text-sm font-medium text-white hover:bg-[#115e59]"><i data-lucide="plus" class="w-4 h-4 mr-2"></i>Register for a course</a>

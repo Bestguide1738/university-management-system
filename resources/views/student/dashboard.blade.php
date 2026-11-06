@@ -40,7 +40,7 @@
 </div>
 
 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
-    <h2 class="text-lg font-semibold">My latest registrations</h2>
+    <h2 class="text-lg font-semibold">My newest registrations</h2>
     <a href="{{ route('student.courses.index') }}" class="inline-flex items-center px-4 py-2 bg-[#0f766e] rounded-md text-sm font-medium text-white hover:bg-[#115e59]"><i data-lucide="plus" class="w-4 h-4 mr-2"></i>Register for a course</a>
 </div>
 <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
