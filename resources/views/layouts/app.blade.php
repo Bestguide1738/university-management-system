@@ -50,7 +50,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Dashboard') — University Management System</title>
+    <title>@yield('title', 'Dashboard') — Heisenberg University</title>
     <link rel="icon" type="image/svg+xml" href="{{ asset('assets/img/logo.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,9 +89,9 @@
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </label>
                     <a href="{{ route('dashboard') }}" class="flex items-center ms-2 md:me-8">
-                        <img src="{{ asset('assets/img/logo.svg') }}" alt="University Management System" class="h-10 w-10 me-3">
+                        <img src="{{ asset('assets/img/logo.svg') }}" alt="Heisenberg University" class="h-10 w-10 me-3">
                         <div class="flex flex-col">
-                            <span class="font-semibold text-slate-900 text-base">University Management System</span>
+                            <span class="font-semibold text-slate-900 text-base">Heisenberg University Management System</span>
                             <span class="text-xs text-slate-500">{{ $areaLabel }}</span>
                         </div>
                     </a>
@@ -188,7 +188,7 @@
         <footer class="bg-white border-t border-slate-200 mt-auto">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-3">
-                    <p class="text-sm text-slate-500">© {{ date('Y') }} <span class="font-semibold text-slate-900">University Management System</span>. All rights reserved.</p>
+                    <p class="text-sm text-slate-500">© {{ date('Y') }} <span class="font-semibold text-slate-900">Heisenberg University Management System</span>. All rights reserved.</p>
                     <p class="text-sm text-slate-400">Students · Lecturers · Courses · Registrations</p>
                 </div>
             </div>
