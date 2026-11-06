@@ -12,10 +12,10 @@ class LecturerSeeder extends Seeder
     public function run(): void
     {
         $lecturers = [
-            ['name' => 'Dr. Grace Nakato',       'staff_number' => 'L-0101', 'department' => 'Computer Science',    'email' => 'grace.nakato@university.ac.ug'],
-            ['name' => 'Dr. Ruth Achieng',       'staff_number' => 'L-0102', 'department' => 'Mathematics',         'email' => 'ruth.achieng@university.ac.ug'],
-            ['name' => 'Mr. Peter Ssemwogerere', 'staff_number' => 'L-0103', 'department' => 'Information Systems', 'email' => 'peter.ssemwogerere@university.ac.ug'],
-            ['name' => 'Prof. Samuel Mugisha',   'staff_number' => 'L-0104', 'department' => 'Statistics',          'email' => 'samuel.mugisha@university.ac.ug'],
+            ['name' => 'Dr. Grace Nakato',       'staff_number' => 'L-0101', 'department' => 'Computer Science',    'email' => 'grace.nakato@university.UG.ug'],
+            ['name' => 'Dr. Ruth Achieng',       'staff_number' => 'L-0102', 'department' => 'Mathematics',         'email' => 'ruth.achieng@university.UG.ug'],
+            ['name' => 'Mr. Peter Ssemwogerere', 'staff_number' => 'L-0103', 'department' => 'Information Systems', 'email' => 'peter.ssemwogerere@university.UG.ug'],
+            ['name' => 'Prof. Samuel Mugisha',   'staff_number' => 'L-0104', 'department' => 'Statistics',          'email' => 'samuel.mugisha@university.UG.ug'],
         ];
 
         foreach ($lecturers as $row) {
