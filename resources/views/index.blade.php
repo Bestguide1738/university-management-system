@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Management System | Students, courses, and registrations</title>
+    <title>Heisenberg University | Academic Management</title>
     <meta name="description" content="Manage students, courses, lecturers, and course registrations in one place. Sign in as an administrator, lecturer, or student.">
     <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+<body class="landing-page bg-slate-50 text-slate-900 font-sans antialiased">
     <!-- Page: Public landing page | Laravel view: resources/views/welcome.blade.php -->
     <!-- Start: Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200">
@@ -35,7 +35,7 @@
                 <a href="{{ url('/') }}" class="flex items-center gap-3">
                     <img src="assets/img/logo.svg" alt="University Management System" class="h-11 w-11">
                     <div class="hidden sm:block">
-                        <p class="text-sm font-semibold text-slate-900 leading-tight">University Management System</p>
+                        <p class="text-sm font-semibold text-slate-900 leading-tight">Heisenberg University Management System</p>
                         <p class="text-[11px] text-slate-500">Students, courses, and registrations</p>
                     </div>
                 </a>
@@ -78,11 +78,11 @@
                         <span class="text-sm text-slate-500">Semester 1 registration is open</span>
                     </div>
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
-                        Students, courses, and lecturers<br>
-                        <span class="text-gradient">in one place.</span>
+                        Heisenberg University<br>
+                        <span class="text-gradient">A clearer way to manage every semester.</span>
                     </h1>
                     <p class="text-sm sm:text-base text-slate-500 max-w-xl mx-auto lg:mx-0 mb-6 leading-relaxed">
-                        Administrators keep the records. Lecturers see the courses they teach and who registered. Students pick courses and follow their own registrations.
+                        Course registration, student records, and lecturer assignments come together in one place, giving every member of the university a clear view of the semester.
                     </p>
                     <div class="grid gap-2 text-left max-w-xl mx-auto lg:mx-0 mb-8">
                         <div class="flex items-start gap-2 text-sm text-slate-600">
@@ -304,7 +304,7 @@
                 <div>
                     <div class="flex items-center gap-3 mb-6">
                         <img src="assets/img/logo.svg" alt="" class="h-12 w-12">
-                        <span class="font-semibold">University Management System</span>
+                        <span class="font-semibold">Heisenberg University Management System</span>
                     </div>
                     <p class="text-teal-100/80 text-sm leading-relaxed max-w-sm">One place for student records, course catalogues, lecturer assignments, and course registrations.</p>
                 </div>
