@@ -158,26 +158,26 @@ Sign in at **/login**. Each user is sent to the dashboard for their role.
 ## Screenshots
 
 ### Sign in
-![Sign in](docs/screenshots/01-login.png)
+![Sign in](docs/screenshots/login.png)
 
 ### Administrator
-![Admin dashboard](docs/screenshots/02-admin-dashboard.png)
-![Students list](docs/screenshots/03-admin-students.png)
-![Validation error on the add student form](docs/screenshots/04-student-validation.png)
-![Courses list](docs/screenshots/05-admin-courses.png)
-![Registrations list](docs/screenshots/06-admin-registrations.png)
-![Duplicate registration error](docs/screenshots/07-duplicate-registration.png)
+![Admin dashboard](docs/screenshots/admin-dashboard.png)
+![Students list](docs/screenshots/admin-students.png)
+![Validation error on the add student form](docs/screenshots/student-validation.png)
+![Courses list](docs/screenshots/admin-courses.png)
+![Registrations list](docs/screenshots/admin-registrations.png)
+![Duplicate registration error](docs/screenshots/duplicate-registrations.png)
 
 ### Student
-![Available courses](docs/screenshots/08-student-courses.png)
-![My registrations](docs/screenshots/09-student-registrations.png)
+![Available courses](docs/screenshots/student-courses.png)
+![My registrations](docs/screenshots/student-registrations.png)
 
 ### Lecturer
-![My courses](docs/screenshots/10-lecturer-courses.png)
-![Class list](docs/screenshots/11-lecturer-class-list.png)
+![My courses](docs/screenshots/lecturer-courses.png)
+![Class list](docs/screenshots/lecturer-class-list.png)
 
 ### Access control
-![403 when a student opens an admin page](docs/screenshots/12-forbidden.png)
+![403 when a student opens an admin page](docs/screenshots/forbidden.png)
 
 ## Project structure (main parts)
 
